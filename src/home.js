@@ -1,0 +1,32 @@
+
+import {Link} from 'react-router-dom';
+
+export function Navbar(){
+    return(
+        <>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/students" target='_self'>Students</Link>
+                    </li>
+                    {/* <li>
+                        <Link to="/students/:id" target='_self'>Search</Link>
+                    </li> */}
+                </ul>
+            </nav>
+        </>
+    )
+}
+
+function Home(){
+    return(
+        <>
+            <h1>Welcome Home!!</h1>
+        </>
+    )
+}
+
+export default Home; 

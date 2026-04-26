@@ -1,0 +1,33 @@
+h1{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+table{
+    border: 2px solid blue;
+    position: relative;
+    left: 250px;
+    padding: 10px;
+}
+
+thead{
+    background-color:aquamarine;
+    padding:10px;
+}
+tbody{
+    padding: 10px;
+}
+tr:nth-child(even){
+    background-color: lavender;
+}
+.details{
+    border:2px dashed red;
+    border-radius: 10px;
+    width:200px;
+    padding: 10px;
+    text-align: center;
+}
+p{
+    font-family: cursive;
+    font-variant: small-caps;
+}
