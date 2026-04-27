@@ -13,7 +13,7 @@ function Students(){
     }
     return(
         <>
-        <h1>Students Information</h1>
+        <h2>Students Information</h2>
            <table>
             <thead>
             <tr>

@@ -24,7 +24,7 @@ export function Navbar(){
 function Home(){
     return(
         <>
-            <h1>Welcome Home!!</h1>
+            <h2>Happy to be Home!!</h2>
         </>
     )
 }

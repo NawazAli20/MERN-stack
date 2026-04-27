@@ -9,6 +9,7 @@ import { Navbar } from './home.js';
 function App(){
     return(
         <>
+        <h1>Welcome to Student Page</h1>
             <BrowserRouter>
             <Navbar/>
                 <Routes>

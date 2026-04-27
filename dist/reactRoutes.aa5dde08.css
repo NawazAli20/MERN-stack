@@ -2,6 +2,14 @@ h1 {
   color: #fff;
   text-align: center;
   background-color: red;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  background-color: green;
+  border-radius: 10px;
 }
 
 table {
