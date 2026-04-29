@@ -62,6 +62,23 @@ app.post("/api/students", async (req, res) => {
   }
 });
 
+// Route 5: update a student by id
+app.put("/api/students/:id", async (req, res) => {
+  try {
+    const {id} = req.params;
+    const student = req.body;
+    const result = await Student.updateOne({_id:id},student);
+
+     if (result.matchedCount === 0) {
+      return res.status(404).json({ error: "Student not found" });
+    }
+    res.status(200).json({message:"Student updated successfully"});
+  } catch (err) {
+    res.status(500).json({ error: "Invalid student ID" });
+  }
+});
+
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

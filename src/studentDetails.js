@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function StudentDetails() {
   const { id } = useParams();
@@ -26,12 +26,13 @@ function StudentDetails() {
       <h2>Student Details</h2>
 
       {student ? (
-        <>
+          <>
           <p>ID: {student._id}</p>
           <p>Name: {student.name}</p>
           <p>Total Credit: {student.tot_credit}</p>
           <p>Department: {student.dept_name}</p>
-        </>
+          <p><Link to={`/students/update/${student._id}`} target='_self'>Update</Link></p>
+          </>
       ) : (
         <p>{errmsg}</p>
       )}
