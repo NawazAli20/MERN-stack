@@ -4,6 +4,7 @@ import Home from './home.js';
 import Students from './students.js'; 
 import StudentDetails from './studentDetails.js'; 
 import { Navbar } from './home.js';
+import AddStudent from './addStudent.js';
 
 
 function App(){
@@ -16,6 +17,7 @@ function App(){
                     <Route path="/" element={<Home/>}/>
                     <Route path="/students" element={<Students/>}/>
                     <Route path="/students/:id" element={<StudentDetails/>}/>
+                    <Route path="/students/add" element={<AddStudent/>}/>
                 </Routes>
             </BrowserRouter>
         </>

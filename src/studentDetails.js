@@ -1,33 +1,42 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import students from './studentsDb.js'; 
 
-function StudentDetails(){
-    const {id} = useParams(); 
-    console.log("Student ID: "+id);
-    let student = null; 
-    if(id){
-        student = students.find(student=>
-            student._id == id
-        )
+function StudentDetails() {
+  const { id } = useParams();
+  const [student, setStudent] = useState(null);
+  const [errmsg, setErrmsg] = useState("");
 
+  useEffect(() => {
+    async function getStudent() {
+      const response = await fetch(`http://localhost:3000/api/students/${id}`);
+
+      if (response.ok) {
+        const data = await response.json();
+        setStudent(data);
+      } else {
+        setErrmsg("Student not found");
+      }
     }
-    return(
+
+    getStudent();
+  }, [id]);
+
+  return (
+    <>
+      <h2>Student Details</h2>
+
+      {student ? (
         <>
-         <h2>Student Details:</h2>
-         {student? 
-                <>
-                    <div className="details">
-                        <p>ID: {student._id}</p>
-                        <p>Name: {student.name}</p>
-                        <p>GPA: {student.gpa}</p>
-                        <p>Total Credit: {student.tot_credit}</p>
-                        <p>Department: {student.department}</p>
-                    </div>
-                </>
-                :
-                <p>No student with ID {id} is found</p>    
-            }
+          <p>ID: {student._id}</p>
+          <p>Name: {student.name}</p>
+          <p>Total Credit: {student.tot_credit}</p>
+          <p>Department: {student.dept_name}</p>
         </>
-    );
+      ) : (
+        <p>{errmsg}</p>
+      )}
+    </>
+  );
 }
+
 export default StudentDetails;

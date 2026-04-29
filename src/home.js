@@ -12,6 +12,9 @@ export function Navbar(){
                     <li>
                         <Link to="/students" target='_self'>Students</Link>
                     </li>
+                     <li>
+                        <Link to="/students/add" target='_self'>Add Student</Link>
+                    </li>
                     {/* <li>
                         <Link to="/students/:id" target='_self'>Search</Link>
                     </li> */}
