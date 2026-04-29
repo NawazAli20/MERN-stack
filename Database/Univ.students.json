@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "69de77118a05800e691a9a4d"
+  },
+  "name": "Jacobs Sartin",
+  "dept_name": "CS&IS",
+  "tot_credit": 21
+},
+{
+  "_id": {
+    "$oid": "69de787e5c5c89c27c4e56c3"
+  },
+  "name": "Cristian",
+  "dept_name": "CS&IS",
+  "tot_credit": 12
+},
+{
+  "_id": {
+    "$oid": "69f1806939bd65ea055d260a"
+  },
+  "name": "Sarah",
+  "dept_name": "CS&IS",
+  "tot_credit": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69f1808039bd65ea055d260b"
+  },
+  "name": "Markel",
+  "dept_name": "CS&IS",
+  "tot_credit": 15,
+  "__v": 0
+}]
