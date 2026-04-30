@@ -18,7 +18,7 @@ npm install
 
 # How to run 
 Start the server (back-end) in a terminal: 
-npm run server
+_npm run server_
 
 Start the app (front-end) in second terminal: 
-npm start
+_npm start_
