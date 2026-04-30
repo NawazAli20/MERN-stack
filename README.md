@@ -17,8 +17,10 @@ This repo implement CURD operations.
 npm install
 
 # How to run 
-Start the server (back-end) in a terminal: 
+Start the server (back-end) in a terminal first: 
 _npm run server_
 
-Start the app (front-end) in second terminal: 
+and then:
+
+Start the app (front-end) in a second terminal: 
 _npm start_
