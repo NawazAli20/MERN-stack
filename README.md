@@ -5,6 +5,12 @@ This repo will serve as starting point of a complete MERN stack full-stack proje
 Front-end tool: react 
 Back-end tools: Node, Express and MongoDB
 
+This repo implement CURD operations. 
+- **C (Create):** Create a new document (object)
+- **R (Read):** Retrieve or read existing document(s)
+- **U (Update):** Modify an existing document
+- **D (Delete):** Remove an existing document
+
 
 # Dependencies Installation 
 
