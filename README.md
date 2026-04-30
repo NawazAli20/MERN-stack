@@ -2,8 +2,8 @@
 MERN: Full stack web development
 
 This repo will serve as starting point of a complete MERN stack full-stack project (fron-end and back-end) implementation
-Front-end tool: react 
-Back-end tools: Node, Express and MongoDB
+- **Front-end tool: react** 
+- **Back-end tools: Node, Express and MongoDB**
 
 This repo implement CURD operations. 
 - **C (Create):** Create a new document (object)
