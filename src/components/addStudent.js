@@ -30,7 +30,7 @@ function AddStudent(){
                 <input type="number" name="tot_credit" id="tot_credit"
                 onChange={handleChange}
                 placeholder="12"/>
-                <button type="submit">Send</button>
+                <button type="submit">Add</button>
 
             </form>
         </>

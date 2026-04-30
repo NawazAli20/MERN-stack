@@ -1,5 +1,15 @@
  const apiEndPoint = "http://localhost:3000/api/students"; 
 
+    async function getStudents() {
+      const response = await fetch(apiEndPoint,{method:"GET"});
+      if(response.ok){
+        return await response.json();
+      }else{
+        alert("student fetch error");
+      }  
+      
+    }
+
    async function getStudent(studentId) {
       const response = await fetch(`${apiEndPoint}/${studentId}`);
 
@@ -41,4 +51,4 @@
         }
     }
 
-    export {getStudent, addStudent, updateStudent};
+    export {getStudents, getStudent, addStudent, updateStudent};

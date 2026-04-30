@@ -11,7 +11,7 @@ function Students() {
 
     async function getStudents() {
       const response = await fetch(apiEndPoint,{method:"GET"});
-      const data = await response.json();
+        const data = await response.json();
       setStudents(data);
     }
 
@@ -51,7 +51,7 @@ function Students() {
                 <Link to={`/students/${student._id}`}>View</Link>
               </td>
               <td>
-                <button onClick={()=>deleteAStudent(student._id)}>Delete</button>
+                <button onClick={()=>deleteAStudent(student._id)}>X</button>
               </td>
             </tr>
           ))}
